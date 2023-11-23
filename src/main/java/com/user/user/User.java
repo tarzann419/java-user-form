@@ -25,6 +25,16 @@ public class User {
     @Column(name = "last_name", nullable = false, length = 45)
     private String lastName;
 
+    private Boolean enabled;
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
     public Integer getId() {
         return id;
     }
