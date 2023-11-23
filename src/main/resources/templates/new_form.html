@@ -9,11 +9,11 @@
 <body>
 <div class="container-fluid text-center">
   <div class="text-center">
-    <h1>Add New User</h1>
+    <h1>[[ ${pageTitle} ]]</h1>
   </div>
   <form th:action="@{/users/save}" th:method="post" th:object="${user}" style="max-width: 500px; margin: 0 auto;">
     <div class="border">
-
+<input type="hidden" th:field="*{id}">
       <div class="form-group row">
         <label th:for="E-mail" class="col-sm-4 col-form-label">E-mail</label>
         <div class="col-sm-8">
