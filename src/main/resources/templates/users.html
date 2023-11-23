@@ -12,6 +12,10 @@
     <a class="h3 btn btn-info" th:href="@{'/users/add-new'}">Add new user</a>
   </div>
 
+  <div th:if="${message}" class="alert alert-success text-center">
+    [[${message}]]
+  </div>
+
   <table class="table table-bordered">
     <thead class="thead-dark">
       <tr>
